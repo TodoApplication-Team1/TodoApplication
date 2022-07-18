@@ -1,3 +1,25 @@
+<ng-template #content let-modal>
+    <div class="modal-header" style="align-items: center">
+      <h6 class="modal-title">New Category</h6>
+      <!-- <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button> -->
+    </div>
+    <div class="modal-body">
+      <p style="text-align: center" type="text">Write Category</p>
+    </div>
+    <div class="modal-footer">
+      
+      <button
+        style="text-align: right"
+        type="button"
+        class="btn btn-primary"
+        (click)="modal.close('Close click')"
+        
+      >
+       + &nbsp; ADD
+      </button>
+    </div>
+  </ng-template>
+
 <div class="container-fluid">
     
     <div class="row">
@@ -29,6 +51,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
                                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
                               </svg>
+                              <!-- <span class="badge badge-pill badge-primary">4</span> -->
                         </a>
                     </li>
                     
@@ -71,7 +94,53 @@
         </div>
         <div class="col-sm p-3 min-vh-100">
             <!-- content -->
-            <p>settings works!</p>
+
+            <section class="vh-100 bg-image"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-65">
+      <div class="row d-flex justify-content-center align-items-center h-80">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-left mb-3">Settings</h2><label>Theme</label>
+              <div class="btn-group" style="float: right;">
+                <button  type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  Select Theme
+                  
+                </button>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                  <button class="dropdown-item" type="button">Light</button>
+                  <button class="dropdown-item" type="button">Dark</button>
+                </div>
+              </div>
+              
+
+              <h2 class="text-left mb-3">Categories</h2>
+                
+              <button
+          
+          type="submit"
+          class="btn btn-sm btn-primary text-white pull-left px-2 py-1 text-wrap"
+          (click)="openVerticallyCentered(content)"
+          style="font-size: 15px;"
+        >
+          
+         <b>+</b> 
+        </button>
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+            
         </div>
     </div>
 </div>
