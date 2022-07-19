@@ -3,9 +3,12 @@
       <h6 class="modal-title">New Category</h6>
       <!-- <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button> -->
     </div>
-    <div class="modal-body">
-      <p style="text-align: center" type="text">Write Category</p>
-    </div>
+    <!-- <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Category</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </form> -->
     <div class="modal-footer">
       
       <button
@@ -96,34 +99,34 @@
             <!-- content -->
 
             <section class="vh-100 bg-image"
-  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
-  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-    <div class="container h-65">
-      <div class="row d-flex justify-content-center align-items-center h-80">
-        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-          <div class="card" style="border-radius: 15px;">
-            <div class="card-body p-5">
-              <h2 class="text-left mb-3">Settings</h2><label>Theme</label>
-              <div class="btn-group" style="float: right;">
-                <button  type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                  Select Theme
+             style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+              <div class="container h-65">
+                <div class="row d-flex justify-content-center align-items-center h-80">
+                  <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                      <div class="card-body p-5">
+                         <h2 class="text-left mb-3">Settings</h2><label>Theme</label>
+                            <div class="btn-group" style="float: right;">
+                              <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdowmMenu" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                Select Theme
                   
-                </button>
-                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                  <button class="dropdown-item" type="button">Light</button>
-                  <button class="dropdown-item" type="button">Dark</button>
-                </div>
-              </div>
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdowmMenu">
+                                <button class="dropdown-item" type="button">Light</button>
+                                <button class="dropdown-item" type="button">Dark</button>
+                              </div>
+                            </div>
               
 
-              <h2 class="text-left mb-3">Categories</h2>
+              <h4 class="text-left mb-3">Categories</h4>
                 
               <button
           
           type="submit"
-          class="btn btn-sm btn-primary text-white pull-left px-2 py-1 text-wrap"
+          class="btn btn-sm btn-primary text-white pull-left px-2 py-0.5 text-wrap"
           (click)="openVerticallyCentered(content)"
-          style="font-size: 15px;"
+          style="font-size: 15px;border-radius: 12px;"
         >
           
          <b>+</b> 
