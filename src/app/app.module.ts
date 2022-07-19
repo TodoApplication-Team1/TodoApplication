@@ -35,8 +35,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    SocialLoginModule,
-     
+    SocialLoginModule
   ],
   providers: [
     UserLoginService,

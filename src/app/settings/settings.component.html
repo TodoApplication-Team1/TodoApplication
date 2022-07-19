@@ -9,6 +9,7 @@
         <input matInput>
       </mat-form-field>
     </form> -->
+    <input type="text" placeholder="Write Here"> 
     <div class="modal-footer">
       
       <button
@@ -107,19 +108,29 @@
                     <div class="card" style="border-radius: 15px;">
                       <div class="card-body p-5">
                          <h2 class="text-left mb-3">Settings</h2><label>Theme</label>
-                            <div class="btn-group" style="float: right;">
-                              <button  type="button" class="btn btn-primary dropdown-toggle" id="dropdowmMenu" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                            <!-- <div class="btn-group" style="float: right;">
+                              <select   class="btn btn-primary dropdown-toggle" id="dropdowmMenu" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
                                 Select Theme
-                  
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="dropdowmMenu">
-                                <button class="dropdown-item" type="button">Light</button>
-                                <button class="dropdown-item" type="button">Dark</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdowmMenu">
+                                <option class="dropdown-item" selected>Light</option>
+                                <option class="dropdown-item" >Dark</option>
                               </div>
-                            </div>
-              
-
+                              </select>
+                              
+                            </div> -->
+                            <div class="btn-group" style="float: right;margin-right: 6.2rem;" >
+                              <select class="custom-select mr-sm-3" id="inlineFormCustomSelectPref">
+                                  <option selected>Select Theme</option>
+                                   <option value="1">Light</option>
+                                  <option value="2">Dark</option> 
+                                  <!-- <option value="3">Three</option> --> 
+                                </select>
+                            
+                          </div>
+                          <br>
+                          <br>
               <h4 class="text-left mb-3">Categories</h4>
+
                 
               <button
           
